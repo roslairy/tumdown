@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+
+<div class="container">
+  <h3>Tumblr Donwloader</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-tab="#tab-1" class="nav-btn" href="#">Downloading</a></li>
+    <li><a data-tab="#tab-2" class="nav-btn" href="#">completed</a></li>
+    <li><a data-tab="#tab-3" class="nav-btn" href="#">failed</a></li>
+  </ul>
+
+  <table id="tab-1" class="table td-tab">
+    <tr>
+      <th>name</th>
+    </tr>
+  </table>
+
+  <table id="tab-2" class="table td-tab invisible">
+    <tr>
+      <th>name</th>
+      <th>operation</th>
+    </tr>
+  </table>
+
+  <table id="tab-3" class="table td-tab invisible">
+    <tr>
+      <th>name</th>
+      <th>operation</th>
+    </tr>
+  </table>
+</div>
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/popup.js"></script>
+</body>
+</html>

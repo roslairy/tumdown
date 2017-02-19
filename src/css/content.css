@@ -1,0 +1,32 @@
+/**
+ * filename: content.css
+ * author: trollear
+ * date: 2017/2/19
+ */
+
+.TD-btn{
+    position: absolute;
+    z-index: 9999999;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-position: left;
+    background-image: url("../img/btn.png"); /* TODO:  */
+    background-color: rgba(0, 0, 0, 0.49);
+}
+
+.TD-btn:hover{
+    background-position: center;
+    background-color: #000000;
+}
+
+.TD-btn.clicked, .TD-btn.clicked:hover{
+    background-position: right;
+}
+
+.TD-btn, .TD-btn:hover, .TD-btn.clicked{
+    transition: background-position 0.2s;
+    -moz-transition: background-position 0.2s;
+    -webkit-transition: background-position 0.2s;
+    -o-transition: background-position 0.2s;
+}

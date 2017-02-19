@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>data-test</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="../js/data.js"></script>
+    <script type="text/javascript">
+      console.log(TD);
+      //TD.data.saveDownload("teset.jpg", "http", "downloading", 87);
+      console.log(TD.data.getDownloadings());
+      TD.data.deleteDownload("teset.jpg");
+      console.log(TD.data.isDownloadExist("teset.jpg"))
+    </script>
+  </body>
+</html>

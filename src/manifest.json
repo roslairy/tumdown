@@ -1,0 +1,29 @@
+{
+  "name": "Tumblr Downloader",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Download and Manage Tumblr Images",
+  "icons": { "128": "img/icon.png" },
+  "background": {
+    "scripts": ["js/zepto.min.js", "js/background.js"]
+  },
+  "permissions": [
+    "downloads",
+    "http://*.tumblr.com/"
+  ],
+  "browser_action": {
+    "default_title": "Tumblr Downloader",
+    "default_icon": "img/icon.png",
+    "default_popup": "html/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.tumblr.com/archive"],
+      "css": ["css/content.css"],
+      "js": ["js/zepto.min.js", "js/content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "img/*"
+  ]
+}

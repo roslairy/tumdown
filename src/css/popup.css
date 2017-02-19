@@ -1,0 +1,17 @@
+/**
+ * filename: popup.css
+ * author: trollear
+ * date: 2017/2/19
+ */
+
+body{
+    width: 480px;
+    height: 400px;
+    overflow: scroll;
+}
+
+.td-tab.invisible{
+    visibility: hidden;
+    display: none;
+}
+
